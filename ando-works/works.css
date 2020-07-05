@@ -1,0 +1,156 @@
+/* CSS Document */
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+    font-family: sofia-pro, 'Sawarabi Gothic', sans-serif;
+    overflow-x: hidden;
+    background-color: #F0E6DA;
+    color: #4A4645;
+    font-weight: normal;
+    line-height: 1.7;
+    letter-spacing: 0.05em;
+    font-feature-settings: "palt";
+	/*禁則処理*/
+    line-break: strict;
+}
+
+body html{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+h5{
+	font-size: 1.2rem;
+	font-weight: normal;
+	display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+h4{
+	font-size: 1.4rem;
+	font-weight: normal;
+	display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+h3{
+	font-size: 1.5rem;
+	font-weight: normal;
+	display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+p{
+	font-size: 1rem;
+}
+
+/*.wrapper{
+	background-color: #712F30;
+	color: ivory;
+	text-align-last: center;
+	width: 100%;
+	margin: 0 auto
+}*/
+
+.works-page{
+	display: table;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	background-color: #F0E6DA;
+}
+
+.works-wrap{
+	display: table;
+	vertical-align: middle;
+}
+
+/*.container{
+	height: 490px;
+}*/
+
+.image-box{
+	visibility: visible;
+	position: relative;
+}
+
+.swipe-image{
+	width: 533px;
+	height: 490px;
+}
+
+.slide-image{
+	display: flex;
+	box-sizing: content-box;
+	position: relative;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	transition-property: transform
+}
+
+.img{
+	max-width: 100%;
+	width: 100%;
+	height: 100%;
+	border: none;
+	vertical-align: bottom;
+}
+
+.image-garally{
+	overflow: hidden;
+	list-style: none;
+	margin: 0 auto;
+}
+
+.swipe-wrapper{
+	margin: 0 auto;
+}
+
+.swipe-slide{
+	display: inline-block;
+	overflow: hidden;
+	width: 50px;
+	height: 50px;
+	margin-right: 10px;
+	line-height: 0;
+	letter-spacing: normal;
+}
+
+
+.content{
+	overflow-y: auto;
+	position: relative;
+}
+
+.btn-close{
+	color: #4A4645;
+	margin: 0;
+	padding: 0;
+	float: right;
+}
+
+.content .title{
+	padding-bottom: 50px;
+	font-weight: 700;
+	font-size: 2.5rem;
+	
+}
+
+.detail{
+	margin: 40px 0;
+	padding: 40px 0;
+	border-top: 1px solid #4A4645;
+	border-bottom: 1px solid #4A4645;
+	font-weight: 700;
+}
+
+.content p{
+	padding-bottom: 1em;
+	line-height: 1.85;
+}

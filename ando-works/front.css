@@ -1,0 +1,556 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+    font-family: sofia-pro, 'Sawarabi Gothic', sans-serif;
+    overflow-x: hidden;
+    background-color: #F0E6DA;
+    color: #4A4645;
+    font-weight: normal;
+    line-height: 1.7;
+    letter-spacing: 0.05em;
+    font-feature-settings: "palt";
+	/*禁則処理*/
+    line-break: strict;
+}
+
+body html{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+h5{
+	font-size: 1.2rem;
+	font-weight: normal;
+	display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+h4{
+	font-size: 1.4rem;
+	font-weight: normal;
+	display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+h3{
+	font-size: 1.5rem;
+	font-weight: normal;
+	display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+p{
+	font-size: 1rem;
+}
+
+.header{
+    position: fixed;
+    /* 重なり順 */
+    z-index: 100; 
+    top: 0;
+    left: 0;
+    width: 15%;
+    min-height: 100vh;
+    padding: 30px 0;
+    transition: 800ms;
+    order: 2;
+    display: flex;
+	background-color: #E7DBCF;
+}
+
+.logo img{
+    width: 60px;
+    opacity: 0.5;
+    margin: 30px;
+}
+
+.menu{
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact-btn{
+    margin: 0;
+    padding: 0;
+    border: 0;
+	/*親要素の継承*/
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+.nav-list a{
+    text-decoration: none;
+    color: #6F665D;
+}
+
+a img{
+    border: 0;
+}
+
+.nav-menu .nav-list{
+    padding: 0 30px;
+    font-weight: 700;
+    line-height: 2;
+    letter-spacing: .02em;
+    font-size: 1.2rem;
+}
+
+ul{
+    list-style: none;
+}
+
+main{
+	width: 90%;
+    margin: 0 auto;
+}
+
+.section-tag{
+    color: #B0555A;
+    margin-top: 100px;
+	font-size: 1.2rem;
+    /* border-bottom: solid 1px #B0555A; */
+}
+
+.section-top{
+	top: 0;
+}
+
+.hero img{
+    /* width: 1075px; */
+    width: 100%;
+    height: auto;
+    /* height: calc(100% - 60px); */
+}
+
+.icon{
+    color: #807772;
+    font-size: 0.9em;
+}
+
+.main-contents{
+	top: 0;
+    width: 85%;
+    float: right;
+    background-image: url(images/back-logo.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 60% 40%, 50% 50%;
+    background-size: 400px;
+}
+
+.section-idea{
+    text-align: justify;
+}
+
+.profile{
+    float: left;
+    margin: 0 0 30 0px;
+}
+
+.profile-text{
+    margin-top: 60px;
+}
+
+.section-about{
+    width: 100%;
+}
+
+.section-about p{
+	margin-bottom: 20px;
+}
+
+.about-child{
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	display: flex;
+    justify-content: space-around;
+}
+
+.children{
+    width: 300px;
+    /*height: 150px;*/
+    padding: 30px;
+    border-radius: 6px;
+	background-color: ivory;
+    margin: 0 10px;
+    text-align: justify;
+}
+
+.about-child h5{
+	display: block;
+    text-align: center;
+	font-size: 1.2rem;
+	margin-block-start: 0;
+}
+
+.section-works{
+    /* floatの回り込み解除 */
+    clear: both;
+}
+
+/* .works-web img{
+    width: 800px;
+    margin-left:70px;
+    margin-top: 10px;
+    float: left;
+}
+
+.works-web ul{
+    float: left;
+    line-height: 1.0;
+}
+
+.works-web li{
+    margin-left: 20px;
+    margin-top: 7px;
+} */
+
+/* .circle{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #DAC596;
+} */
+
+.works-list-wrap{
+    /* はみ出た部分隠し（クリッピングマスク的な） */
+    overflow: hidden;
+    margin: 0;
+}
+
+.works-list-wrap ul{
+	margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 0;
+}
+
+.works-list{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    /* 文章の折り返し */
+    flex-wrap: wrap;
+}
+
+.works-list .item{
+    width: 300px;
+}
+
+.works-list .item-box{
+    overflow: hidden;
+	height: 100%;
+    border-radius: 6px;
+    background-color: ivory;
+}
+
+figure{
+	display: block;
+	height: 300px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
+.works-list .image{
+    position: relative;
+	background-color: #ffffff;
+}
+
+.works-list .image img{
+    position: relative;
+    z-index: 1;
+    height: 300px;
+}
+
+.works-list .content{
+    padding: 30px;
+    font-size: 0.9rem;
+}
+
+.works-list .item-title{
+	top: 0;
+	padding-bottom: 10px;
+	font-weight: 600;
+	line-height: 1;
+	font-size: 1.5rem;
+}
+
+.item-title h3{
+	font-size: 1.5rem;
+	display: block;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+}
+
+.works-list .text{
+	/*文字組み両端揃え*/
+	text-align: justify;
+} 
+
+.text p{
+	font-size: 0.9rem;
+}
+
+.works-button{
+    color: #4A4645;
+    margin-top: 20px;
+}
+
+.works-button, .close{
+    cursor: pointer;
+}
+
+.close{
+	color: #4A4645;
+	margin: 0;
+	padding: 0;
+	float: right;
+}
+
+.works-page{
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+	z-index: 200;
+	position: fixed;
+	background-color: #C7C1B5;
+}
+
+.page-box{
+	width: 90%;
+	height: 90%;
+	border-radius: 10px;
+	background-color: ivory;
+	color: #4A4645;
+	opacity: 1;
+	margin: 3% auto;	
+    overflow: scroll;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: row;
+}
+
+/* イケてるスクロールバー */
+.page-box::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+}
+
+.page-box::-webkit-scrollbar-track{
+    background: #D9D5CA;
+    border: none;
+    border-radius: 5px;
+}
+
+.page-box::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background: #807772;
+    box-shadow: none;
+}
+
+.image-garally{
+	display: flex;
+	flex-direction: column;
+	/* float: left; */
+	overflow: hidden;
+}
+
+.page-image{
+	margin: 0;
+	padding: 0;
+	width: 555px;
+	height: 380px;
+}
+
+#page8 .page-image{
+    height: 280px;
+}
+
+#page8 .page-image img{
+    height: 280px;
+}
+
+.page-image img{
+	width: 555px;
+	height: 380px;
+	position: relative;
+    z-index: 1;
+}
+
+.page-content{
+    width: 50%;
+	/* float: right; */
+    font-size: 0.9rem;
+    padding: 30px;
+}
+
+.page-text{
+    margin-top: 20px;
+	text-align: justify;
+	height: 100%;
+	width: 100%;
+}
+
+.page-title{
+	font-weight: 700;
+	font-size: 1.6rem;
+}
+
+.detail{
+	margin: 20px 0;
+	padding: 20px 0;
+	border-top: 1px solid #4A4645;
+	border-bottom: 1px solid #4A4645;
+	font-weight: 700;
+}
+
+.page-text p{
+    font-size: 0.8rem;
+    margin: 15px 0;
+}
+
+.page-title a{
+    color: #4A4645;
+}
+
+.page-text a{
+    /* text-decoration: none; */
+    color: #569383;
+    float: right;
+}
+
+.section-contact a{
+    color: #4A4645;
+}
+
+/*.works-list .item-title{
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    color: #ffffff;
+    font-weight: 900;
+    line-height: 1;
+    align-items: center;
+    font-size: 1.8rem;
+}*/
+
+.wrapper{
+    clear: both;
+	background-color: #712F30;
+	color: ivory;
+	text-align-last: center;
+	width: 100%;
+	margin: 0 auto
+}
+
+.section-contact{
+    margin-bottom: 150px;
+}
+
+@media screen and (max-width: 896px){
+    .page-box{
+        width: 90%;
+        margin: 7% auto;
+        display: block;
+    }
+    .image-garally{
+        width: 100%;
+        flex-direction: row;
+    }
+    .page-image{
+        width: 50%;
+        height: 200px;
+    }
+    .page-image img{
+        width: 100%;
+        height: 200px;
+    }
+
+    #page8 .page-image{
+        flex: none;
+        width: 550px;
+    }
+    #page6 .page-image{
+        flex: none;
+        width: 550px;
+        height: 400px;
+    }
+    #page6 .page-image img{
+        width: 550px;
+        height: 400px;
+    }
+    #page2 .page-image{
+        flex: none;
+        width: 550px;
+        height: 400px;
+    }
+    #page2 .page-image img{
+        height: 400px;
+    }
+
+    .page-content{
+        width: 90%;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .page-text{
+        height: 90%;
+        width: 100%;
+    }
+    .page-text a{
+        float: none;
+    }
+
+    .about-child{
+        width: 300px;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+    .children{
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .section-idea{
+        width: 100%;
+    }
+
+    .works-list .item{
+        width: 370px;
+        margin: 20px auto;
+    }
+
+    .main-contents{
+        width: 100%;
+    }
+
+    .header{
+        display: none;
+    }
+
+    .profile{
+        display: none;
+        /* width: 530px;
+        height: 300px;
+        margin: 0 auto;
+        float: none; */
+    }
+}
